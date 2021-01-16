@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka+One&display=swap');
+
+:root {
+	--primary-light: #fcb7ae;
+	--primary: #fa8072;
+	--primary-dark: #d72717;
+	--secondary-light: #f9bca1;
+	--secondary: #F17641;
+	--secondary-dark: #ca3e00;
+	--accent-light: #85ddff;
+	--accent: #00A8E8;
+	--accent-dark: #00394c;
+	--success-light: #AAFAC8;
+	--success: #5cb982;
+	--success-dark: #044e20;
+	--light: #f5f5f5;
+	--dark: #403D58;
+}
+
+body {
+	background-color: var(--light);
+	color: var(--dark);
+	font-family: 'Comfortaa', sans-serif;
+	font-size: x-large;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Fredoka One', cursive;
+	letter-spacing: 0.15rem;
+}
+
+button {
+	background-color: var(--primary);
+	padding: 0.4rem 0.7rem;
+	font-size: large;
+	font-weight: 900;
+	border-radius: 0.4rem;
+	color: var(--light);
+	border: 2px solid var(--primary-dark);
+	outline: 0;
+	margin-top: 1rem;
+}
+
+button:active,
+button:focus {
+	border-color: var(--primary-light);
+	outline: 0;
+}
+
+i.fa-user-astronaut { color: dimgrey; }
+
+.fa-times,
+#warning {
+	color: var(--primary-dark);
+}
+
+#addUser {
+	background-color: var(--success);
+	border-color: var(--success-dark);
+}
+
+#addUser:active,
+#addUser:focus {
+	border-color: var(--success-light);
+}
+
+#getAllUsers {
+	background-color: var(--secondary);
+	border-color: var(--secondary-dark);
+}
+
+#getAllUsers:active,
+#getAllUsers:focus {
+	border-color: var(--secondary-light);
+}
+
+#usersList {
+	list-style-type: none;
+	line-height: 2.5rem;
+}
+
+#usersList li {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--dark);
+	margin-bottom: 0.25rem;
+}
+
+#usersList i {
+	margin-right: 1rem;
+}
+
+@media all and (min-width: 768px) {
+	#usersList {
+		max-width: 25%;
+	}
+}
